@@ -7,147 +7,122 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 0;
       background: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
-    h1, h2 {
-      color: #003366;
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 20px;
     }
-    h1 {
-      border-bottom: 2px solid #003366;
-      padding-bottom: 5px;
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
     }
-    a {
-      color: #003366;
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin-right: 20px;
       text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
     }
     section {
       margin-bottom: 40px;
     }
-    ul {
-      margin-top: 0;
-    }
-    .contact {
-      font-size: 0.9em;
-    }
-    .project {
-      margin-bottom: 20px;
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h1>MUHAMMAD SYAFIQ MIRZA BIN MUSA</h1>
-  <p class="contact">
-    Chemor, Perak, MY | P: +60 19-560 0107 | 
-    <a href="mailto:syafiq90622@gmail.com">syafiq90622@gmail.com</a> |
-    <a href="https://www.linkedin.com/in/syafiqmirza/" target="_blank">LinkedIn</a>
-  </p>
+  <header>
+    <h1>MUHAMMAD SYAFIQ MIRZA BIN MUSA</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <section>
-    <h2>Profile</h2>
-    <p>
-      Final-year Mechanical Engineering student (graduating October 2025) seeking an entry-level role in a forward-thinking engineering or aerospace company. Eager to contribute strong CAD skills, UAV project experience, and a hands-on approach to real-world engineering tasks. Open to start remote or part-time work immediately, with full on-site availability from January 2026 once licensing and transport readiness are completed.
-    </p>
-  </section>
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>
+        Final-year Mechanical Engineering student with a passion for UAVs, robotics, and mechanical design. Open for internship, part-time, and full-time opportunities.
+      </p>
+    </section>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Universiti Malaya</strong> — Bachelor of Mechanical Engineering (CGPA: 3.35)</li>
-      <li><strong>Pusat Asasi Sains Universiti Malaya</strong> — Foundation in Physical Sciences (CGPA: 3.23)</li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Lightweight Autonomous UAV Platform</h3>
+      <p>Sub-300g UAV using ArduPilot & YOLOv11 for aerial sensing — Silver Award at UM UG I-Fest 2025.</p>
 
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Aerospace Malaysia Innovation Centre (AMIC)</strong> — Mechanical Engineer Intern (Oct 2024, Kajang, MY)</p>
-    <ul>
-      <li>3D CAD design, fabrication, and assembly of a movable robot workstation and modular panels for Selangor Aviation Show 2024.</li>
-      <li>Applied SolidWorks and workshop skills for full design-to-build process in robotics.</li>
-      <li>Troubleshooting and improving design iterations to meet functional requirements.</li>
-    </ul>
-  </section>
+      <h3>Ducted Fan Drone</h3>
+      <p>Designed & fabricated for confined industrial inspections — integrated YOLOv8 AI crack detection.</p>
 
-  <section>
-    <h2>University Projects</h2>
+      <h3>Human Detection System on Rescue Drone</h3>
+      <p>AI vision system with IoT for search-and-rescue UAV — Top 5, Robo-IoT Drone Design Competition.</p>
 
-    <div class="project">
-      <strong>Final Year Project:</strong> Development of Lightweight and Scalable Autonomous UAV Platform for Low-Cost Intelligent Aerial Sensing (June 2025)
-      <ul>
-        <li>Designed and built a sub-300g UAV with ArduPilot for autonomous modes and YOLOv11 object detection (90% accuracy).</li>
-        <li>Won Silver Award at UM UG I-Fest 2025.</li>
-      </ul>
-    </div>
+      <h3>Inflatable Car Floater</h3>
+      <p>Prototype with Utsunomiya University Japan for Monozukuri Project — flood damage reduction.</p>
 
-    <div class="project">
-      <strong>Integrated Design Project:</strong> Ducted Fan Drone for Industrial Inspection
-      <ul>
-        <li>Led design and fabrication of a ducted fan drone for confined industrial spaces.</li>
-        <li>Integrated ArduPilot, Mission Planner, and YOLOv8 AI for crack detection.</li>
-      </ul>
-    </div>
+      <h3>Automatic Solar Tracker</h3>
+      <p>Arduino & SolidWorks — 1st Runner-up, IEEE UM Solar Tracker Design Competition.</p>
+    </section>
 
-    <div class="project">
-      <strong>Human Detection System on Safe and Rescue Drone</strong>
-      <ul>
-        <li>AI computer vision with IoT capability for UAVs using YOLOv5.</li>
-        <li>Top 5 in Robo-IoT Drone Design Competition.</li>
-        <li>Prototype with Raspberry Pi + normal & IR cameras.</li>
-      </ul>
-    </div>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Based in Chemor, Perak, MY.<br>
+        B.Eng Mechanical Engineering (Universiti Malaya).<br>
+        CAD design, UAV projects, robotics fabrication, and teamwork through multiple student leadership roles.
+      </p>
 
-    <div class="project">
-      <strong>Inflatable Car Floater for Monozukuri Design Project UM x UU</strong>
-      <ul>
-        <li>Conceptualized and prototyped an inflatable car floater to reduce flood damage.</li>
-        <li>Collaborated with Utsunomiya University, Japan.</li>
-      </ul>
-    </div>
+      <h3>Skills</h3>
+      <p>
+        SolidWorks, CAD, Fusion 360, 3D Printing, C/C++ Programming, LabVIEW, ArduPilot, Canva, Python (basic), Photoshop (basic).
+      </p>
 
-    <div class="project">
-      <strong>Automatic Solar Tracker Design Competition</strong>
-      <ul>
-        <li>Designed and built a solar tracker using Arduino Uno and SolidWorks.</li>
-        <li>1st Runner-up in IEEE UM Automatic Solar Tracker Design Competition.</li>
-      </ul>
-    </div>
-  </section>
+      <h3>Languages</h3>
+      <p>
+        Malay (fluent), English & Arabic (conversational), German, Russian, Japanese & Chinese (basic).
+      </p>
+    </section>
 
-  <section>
-    <h2>Activities</h2>
-    <ul>
-      <li><strong>IMechE UM Student Chapter:</strong> Active member, drone soccer trainer for World Cup, various drone workshops and exhibitions, international student exchange.</li>
-      <li><strong>AKIUM:</strong> Co-Academic Exco Director, founded UM’s first Formula Student Team, organized events, designed promotional content.</li>
-      <li><strong>REC UM:</strong> Designed & 3D-printed ROBOCON parts, assembled mechanical systems.</li>
-      <li><strong>Gamelan Gema Langpura Astar:</strong> Coach, director & performer for university events and cultural performances.</li>
-      <li><strong>Festival Seni UM:</strong> Kompang Selawat Team — First Runner-Up, teamwork in traditional music.</li>
-      <li><strong>SUKMUM:</strong> Hockey athlete representing 12th Residential College.</li>
-      <li><strong>PSSCMUM:</strong> Secretary, managed silat training and events.</li>
-      <li><strong>Musolla Astar UM:</strong> Multimedia & Technical Exco — designed content, handled PA systems.</li>
-      <li><strong>Angkatan Mahasiswa UM:</strong> Volunteer — campaign posters, campus elections, student welfare.</li>
-    </ul>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        📍 Chemor, Perak, MY <br>
+        📞 +60 19-560 0107 <br>
+        ✉️ <a href="mailto:syafiq90622@gmail.com">syafiq90622@gmail.com</a> <br>
+        🔗 <a href="https://www.linkedin.com/in/syafiqmirza/" target="_blank">LinkedIn Profile</a>
+      </p>
+    </section>
+  </main>
 
-  <section>
-    <h2>Skills</h2>
-    <p><strong>Technical:</strong> SolidWorks, CAD, Fusion 360, 3D Printing, Ultimaker Cura, Canva, C/C++ Programming, LabVIEW, ArduPilot, Capcut, MS Office, Excel, basic Ansys, Python, Photoshop, MS Project.</p>
-  </section>
-
-  <section>
-    <h2>Languages</h2>
-    <p>Malay (fluent), English & Arabic (conversational), German, Russian, Japanese & Chinese (basic).</p>
-  </section>
-
-  <section>
-    <h2>References</h2>
-    <ul>
-      <li>Prof. Ir. Dr. Mohd Faizul bin Mohd Sabri — Deputy Dean of Research, Faculty of Engineering, Universiti Malaya — <a href="mailto:faizul@um.edu.my">faizul@um.edu.my</a>, P: +60 13-621 0037</li>
-      <li>Ir. Dr. Mohd Ridha bin Muhamad @ Mohd Ata’illah — Associate Professor, Dept. of Mechanical Engineering, Universiti Malaya — <a href="mailto:ridha@um.edu.my">ridha@um.edu.my</a>, P: +60 11-3224 8175</li>
-    </ul>
-  </section>
+  <footer>
+    &copy; 2025 Muhammad Syafiq Mirza Bin Musa — All rights reserved.
+  </footer>
 
 </body>
 </html>
